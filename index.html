@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Friyay My Love</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hearts"></div>
+
+  <main class="card">
+    <p class="small-text">It’s Friday, so you already know...</p>
+
+    <h1>Happy Friyay, my love! 💛</h1>
+
+    <div class="photo-frame" onclick="photoSurprise()">
+      <img src="./Photo.jpg" alt="Our photo" />
+      <p class="tap-text">Tap our photo 💕</p>
+    </div>
+
+    <p id="photoMessage" class="hidden mini-message">
+      My favorite view will always be us together 🥹
+    </p>
+
+    <section class="countdown">
+      <div onclick="revealCountdownMessage(12)">
+        <span>12</span>
+        <p>more days till we see each other</p>
+      </div>
+      <div onclick="revealCountdownMessage(14)">
+        <span>14</span>
+        <p>more days till our big day</p>
+      </div>
+      <div onclick="revealCountdownMessage(15)">
+        <span>15</span>
+        <p>more days till we go back to where everything started</p>
+      </div>
+    </section>
+
+    <p id="countdownMessage" class="mini-message hidden"></p>
+
+    <section class="buttons">
+      <button onclick="showMessage()">Open your Friyay message 💌</button>
+      <button onclick="startLoveSurprise()">Start surprise ✨</button>
+    </section>
+
+    <section id="surpriseBox" class="surprise-box hidden">
+      <h2 id="surpriseText">Ready?</h2>
+      <p id="surpriseSubtext">Click the button and wait for it...</p>
+    </section>
+
+    <section id="loveMessage" class="message hidden">
+      <p>
+        Happy Friyay my love! 12 more days till we see each other, 14 more days till our big day and 15 more days till we go back to the country together where everything started.
+      </p>
+      <p>
+        I love you so much and I am so happy to have you.
+      </p>
+      <p class="signature">Forever yours 🤍</p>
+    </section>
+
+    <section class="love-notes">
+      <h2>Click a little love note 💗</h2>
+
+      <div class="note-grid">
+        <button onclick="showNote(1)">Reason 1</button>
+        <button onclick="showNote(2)">Reason 2</button>
+        <button onclick="showNote(3)">Reason 3</button>
+      </div>
+
+      <p id="noteText" class="mini-message hidden"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
