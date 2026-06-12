@@ -8,20 +8,19 @@
 </head>
 <body>
 
-  <div class="hearts"></div>
-
   <main class="card">
     <p class="small-text">It’s Friday, so you already know...</p>
 
     <h1>Happy Friyay, my love! 💛</h1>
 
-    <div class="photo-frame" onclick="photoSurprise()">
-      <img src="./Photo.jpg" alt="Our photo" />
-      <p class="tap-text">Tap our photo 💕</p>
-    </div>
+    <section class="intro-box" onclick="introSurprise()">
+      <div class="big-heart">💛</div>
+      <h2>Tap this heart</h2>
+      <p>for a little Friyay surprise</p>
+    </section>
 
-    <p id="photoMessage" class="hidden mini-message">
-      My favorite view will always be us together 🥹
+    <p id="introMessage" class="mini-message hidden">
+      I miss you extra today, but we are getting closer 🥹
     </p>
 
     <section class="countdown">
@@ -29,10 +28,12 @@
         <span>12</span>
         <p>more days till we see each other</p>
       </div>
+
       <div onclick="revealCountdownMessage(14)">
         <span>14</span>
         <p>more days till our big day</p>
       </div>
+
       <div onclick="revealCountdownMessage(15)">
         <span>15</span>
         <p>more days till we go back to where everything started</p>
@@ -53,11 +54,13 @@
 
     <section id="loveMessage" class="message hidden">
       <p>
-        Happy Friyay my love! 12 more days till we see each other, 14 more days till our big day and 15 more days till we go back to the country together where everything started.
+        Happy Friyay my love! I will never stop greeting your Friday like this. It is something I look forward to telling you every week hehe.
       </p>
+
       <p>
-        I love you so much and I am so happy to have you.
+        Be safe there, my love, and I will see you very soon.
       </p>
+
       <p class="signature">Forever yours 🤍</p>
     </section>
 
@@ -72,6 +75,13 @@
 
       <p id="noteText" class="mini-message hidden"></p>
     </section>
+
+    <section class="final-box" onclick="finalMessage()">
+      <h2>One last tap 💫</h2>
+      <p>Click here when you are done</p>
+    </section>
+
+    <p id="finalText" class="mini-message hidden"></p>
   </main>
 
   <script src="script.js"></script>
