@@ -1,12 +1,3 @@
-function showMessage() {
-  const message = document.getElementById("loveMessage");
-  message.classList.remove("hidden");
-
-  for (let i = 0; i < 25; i++) {
-    createHeart();
-  }
-}
-
 function photoSurprise() {
   const photoMessage = document.getElementById("photoMessage");
   photoMessage.classList.remove("hidden");
@@ -14,6 +5,26 @@ function photoSurprise() {
 
   for (let i = 0; i < 15; i++) {
     createSparkle();
+  }
+}
+
+function introSurprise() {
+  const introMessage = document.getElementById("introMessage");
+  introMessage.classList.remove("hidden");
+  introMessage.innerText = "I miss you extra today, but we are getting closer 🥹💛";
+
+  for (let i = 0; i < 20; i++) {
+    createHeart();
+    createSparkle();
+  }
+}
+
+function showMessage() {
+  const message = document.getElementById("loveMessage");
+  message.classList.remove("hidden");
+
+  for (let i = 0; i < 25; i++) {
+    createHeart();
   }
 }
 
@@ -33,7 +44,7 @@ function revealCountdownMessage(number) {
     countdownMessage.innerText = "15 days until we return to the country where everything started 🌍💕";
   }
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 12; i++) {
     createHeart();
   }
 }
@@ -59,7 +70,7 @@ function startLoveSurprise() {
       text.innerText = "Friyay unlocked 💛";
       subtext.innerText = "You are loved, missed, chosen, and so worth the wait.";
 
-      for (let i = 0; i < 40; i++) {
+      for (let i = 0; i < 45; i++) {
         createHeart();
         createSparkle();
       }
@@ -84,6 +95,17 @@ function showNote(number) {
   }
 
   for (let i = 0; i < 12; i++) {
+    createSparkle();
+  }
+}
+
+function finalMessage() {
+  const finalText = document.getElementById("finalText");
+  finalText.classList.remove("hidden");
+  finalText.innerText = "Happy Friyay, my love. I cannot wait for all the days that are coming with you 🤍";
+
+  for (let i = 0; i < 50; i++) {
+    createHeart();
     createSparkle();
   }
 }
